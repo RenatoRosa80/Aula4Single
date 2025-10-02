@@ -10,7 +10,7 @@ class Vendedor(models.Model):
     telefone = models.IntegerField()
     endereco = models.CharField(max_length=100)
     data_nascimento = models.DateTimeField()
-    sexo = models.CharField()
+    sexo = models.CharField(max_length=1)
     criado_em =  models.DateTimeField(auto_now_add=True)
     atualizado_em =  models.DateTimeField(auto_now_add=True)
 
